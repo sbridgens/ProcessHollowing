@@ -8,3 +8,8 @@ C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingLib\bin\x6
 C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Release\ProcessHollowingLib.csproj.CoreCompileInputs.cache
 C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Release\ProcessHollowingLib.dll
 C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Release\ProcessHollowingLib.pdb
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingLib\bin\x64\Release\ProcessHollowingLib.dll
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingLib\bin\x64\Release\ProcessHollowingLib.pdb
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Release\ProcessHollowingLib.csproj.CoreCompileInputs.cache
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Release\ProcessHollowingLib.dll
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Release\ProcessHollowingLib.pdb
