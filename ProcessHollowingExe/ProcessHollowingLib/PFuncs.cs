@@ -34,7 +34,7 @@ namespace ProcessHollowingLib
             }
         }
 
-        public static byte[] CaesarDecrypt(byte[] buffer, string password, byte[] iv)
+        public static byte[] CaesarDecrypt(byte[] buffer, string password, byte[]iv)
         {
             Console.WriteLine($"[+] Decrypting AES Payload.");
             var decrypted = AesDecrypt(buffer, password, iv);
