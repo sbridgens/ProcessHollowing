@@ -10,3 +10,9 @@ C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingExe\bin\x6
 C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingExe\obj\x64\Release\ProcessHollowingExe.csproj.CoreCompileInputs.cache
 C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingExe\obj\x64\Release\ProcessHollowingExe.exe
 C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingExe\obj\x64\Release\ProcessHollowingExe.pdb
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingExe\bin\x64\Release\ProcessHollowingExe.exe.config
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingExe\bin\x64\Release\ProcessHollowingExe.exe
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingExe\bin\x64\Release\ProcessHollowingExe.pdb
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingExe\obj\x64\Release\ProcessHollowingExe.csproj.CoreCompileInputs.cache
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingExe\obj\x64\Release\ProcessHollowingExe.exe
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingExe\obj\x64\Release\ProcessHollowingExe.pdb

