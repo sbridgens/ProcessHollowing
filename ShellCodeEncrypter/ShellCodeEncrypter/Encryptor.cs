@@ -5,7 +5,7 @@ using System.Security.Cryptography;
 
 namespace ShellCodeEncrypter
 {
-    class Encryptor
+    public class Encryptor
     {
         public byte[] AesEncrypt(byte[] input)
         {

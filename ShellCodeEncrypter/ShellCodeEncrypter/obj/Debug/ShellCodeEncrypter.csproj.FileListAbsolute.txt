@@ -5,3 +5,10 @@ C:\Users\ic34xe\Desktop\OSEP_Code\ShellCodeEncrypter\ShellCodeEncrypter\obj\Debu
 C:\Users\ic34xe\Desktop\OSEP_Code\ShellCodeEncrypter\ShellCodeEncrypter\obj\Debug\ShellCodeEncrypter.csproj.CoreCompileInputs.cache
 C:\Users\ic34xe\Desktop\OSEP_Code\ShellCodeEncrypter\ShellCodeEncrypter\obj\Debug\ShellCodeEncrypter.exe
 C:\Users\ic34xe\Desktop\OSEP_Code\ShellCodeEncrypter\ShellCodeEncrypter\obj\Debug\ShellCodeEncrypter.pdb
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ShellCodeEncrypter\ShellCodeEncrypter\bin\Debug\ShellCodeEncrypter.exe.config
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ShellCodeEncrypter\ShellCodeEncrypter\bin\Debug\ShellCodeEncrypter.exe
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ShellCodeEncrypter\ShellCodeEncrypter\bin\Debug\ShellCodeEncrypter.pdb
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ShellCodeEncrypter\ShellCodeEncrypter\obj\Debug\ShellCodeEncrypter.csproj.AssemblyReference.cache
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ShellCodeEncrypter\ShellCodeEncrypter\obj\Debug\ShellCodeEncrypter.csproj.CoreCompileInputs.cache
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ShellCodeEncrypter\ShellCodeEncrypter\obj\Debug\ShellCodeEncrypter.exe
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ShellCodeEncrypter\ShellCodeEncrypter\obj\Debug\ShellCodeEncrypter.pdb
