@@ -7,11 +7,10 @@ namespace ShellCodeEncrypter
 {
     public class Encryptor
     {
-        public byte[] AesEncrypt(byte[] input)
+        public byte[] AesEncrypt(byte[] input, string password, byte[] iv)
         {
             PasswordDeriveBytes pdb =
-              new PasswordDeriveBytes("ic34xe!!!",//change this
-              new byte[] { 0x67, 0x65, 0x74, 0x66, 0x75, 0x63, 0x6b, 0x65, 0x64 });//change this
+              new PasswordDeriveBytes(password, iv);
             MemoryStream ms = new MemoryStream();
             Aes aes = new AesManaged();
             aes.KeySize = 256;
@@ -24,11 +23,10 @@ namespace ShellCodeEncrypter
             return ms.ToArray();
         }
 
-        public byte[] AesDecrypt(byte[] input)
+        public byte[] AesDecrypt(byte[] input, string password, byte[] iv)
         {
             PasswordDeriveBytes pdb =
-              new PasswordDeriveBytes("ic34xe!!!",//change this
-               new byte[] { 0x67, 0x65, 0x74, 0x66, 0x75, 0x63, 0x6b, 0x65, 0x64 });//change this
+              new PasswordDeriveBytes(password, iv);
             MemoryStream ms = new MemoryStream();
             Aes aes = new AesManaged();
             aes.KeySize = 256;
@@ -41,7 +39,7 @@ namespace ShellCodeEncrypter
             return ms.ToArray();
         }
 
-        public void CaesarEncryptShell(byte[] shellcode)
+        public void CaesarEncryptShell(byte[] shellcode, string password, byte[] iv)
         {
             Console.WriteLine($"[+] Caesar Encoding Payload");
             byte[] encoded = new byte[shellcode.Length];
@@ -55,7 +53,7 @@ namespace ShellCodeEncrypter
             Console.WriteLine($"[+] Payload Is Caesar Encoded");
 
             Console.WriteLine("[+] Encrypting Payload using AES 256!");
-            encoded = AesEncrypt(encoded);
+            encoded = AesEncrypt(encoded, password, iv);
 
             Console.WriteLine("[+] Hex Encoding AES Payload");
             StringBuilder hex = new StringBuilder(encoded.Length * 2);

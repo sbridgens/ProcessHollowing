@@ -52,7 +52,7 @@ namespace ShellCodeEncrypter
 
             Encryptor cryptor = new Encryptor();
 
-            cryptor.CaesarEncryptShell(buf);
+            cryptor.CaesarEncryptShell(buf, args[0], Convert.FromBase64String(args[1]));
 
             Console.ReadLine();
         }
