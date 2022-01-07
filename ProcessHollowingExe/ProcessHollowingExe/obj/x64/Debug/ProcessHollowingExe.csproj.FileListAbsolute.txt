@@ -1,0 +1,13 @@
+C:\Users\Offsec\source\repos\ProcessHollowingExe\ProcessHollowingExe\bin\x64\Debug\ProcessHollowingExe.exe.config
+C:\Users\Offsec\source\repos\ProcessHollowingExe\ProcessHollowingExe\bin\x64\Debug\ProcessHollowingExe.exe
+C:\Users\Offsec\source\repos\ProcessHollowingExe\ProcessHollowingExe\bin\x64\Debug\ProcessHollowingExe.pdb
+C:\Users\Offsec\source\repos\ProcessHollowingExe\ProcessHollowingExe\obj\x64\Debug\ProcessHollowingExe.csproj.CoreCompileInputs.cache
+C:\Users\Offsec\source\repos\ProcessHollowingExe\ProcessHollowingExe\obj\x64\Debug\ProcessHollowingExe.exe
+C:\Users\Offsec\source\repos\ProcessHollowingExe\ProcessHollowingExe\obj\x64\Debug\ProcessHollowingExe.pdb
+C:\Users\Offsec\source\repos\ProcessHollowingExe\ProcessHollowingExe\obj\x64\Debug\ProcessHollowingExe.csprojAssemblyReference.cache
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingExe\bin\x64\Debug\ProcessHollowingExe.exe.config
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingExe\bin\x64\Debug\ProcessHollowingExe.exe
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingExe\bin\x64\Debug\ProcessHollowingExe.pdb
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingExe\obj\x64\Debug\ProcessHollowingExe.csproj.CoreCompileInputs.cache
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingExe\obj\x64\Debug\ProcessHollowingExe.exe
+C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingExe\obj\x64\Debug\ProcessHollowingExe.pdb
