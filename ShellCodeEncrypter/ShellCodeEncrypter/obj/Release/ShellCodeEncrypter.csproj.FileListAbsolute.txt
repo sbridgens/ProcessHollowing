@@ -10,4 +10,3 @@ C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ShellCodeEncrypter\ShellCodeE
 C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ShellCodeEncrypter\ShellCodeEncrypter\obj\Release\ShellCodeEncrypter.csproj.CoreCompileInputs.cache
 C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ShellCodeEncrypter\ShellCodeEncrypter\obj\Release\ShellCodeEncrypter.exe
 C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ShellCodeEncrypter\ShellCodeEncrypter\obj\Release\ShellCodeEncrypter.pdb
-C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ShellCodeEncrypter\ShellCodeEncrypter\obj\Release\ShellCodeEncrypter.csproj.AssemblyReference.cache
