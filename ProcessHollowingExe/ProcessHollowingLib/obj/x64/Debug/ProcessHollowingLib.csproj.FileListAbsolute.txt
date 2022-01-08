@@ -1,19 +1,5 @@
-C:\Users\Offsec\source\repos\ProcessHollowingExe\ProcessHollowingLib\bin\x64\Debug\ProcessHollowingLib.dll
-C:\Users\Offsec\source\repos\ProcessHollowingExe\ProcessHollowingLib\bin\x64\Debug\ProcessHollowingLib.pdb
-C:\Users\Offsec\source\repos\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Debug\ProcessHollowingLib.csproj.CoreCompileInputs.cache
-C:\Users\Offsec\source\repos\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Debug\ProcessHollowingLib.dll
-C:\Users\Offsec\source\repos\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Debug\ProcessHollowingLib.pdb
-C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingLib\bin\x64\Debug\ProcessHollowingLib.dll
-C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingLib\bin\x64\Debug\ProcessHollowingLib.pdb
-C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Debug\ProcessHollowingLib.csproj.CoreCompileInputs.cache
-C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Debug\ProcessHollowingLib.dll
-C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Debug\ProcessHollowingLib.pdb
 C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingLib\bin\x64\Debug\ProcessHollowingLib.dll
 C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingLib\bin\x64\Debug\ProcessHollowingLib.pdb
-<<<<<<< HEAD
-=======
-C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Debug\ProcessHollowingLib.csproj.AssemblyReference.cache
->>>>>>> 45467498e47e8ffd9892d75ba3432fdf70175dd1
 C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Debug\ProcessHollowingLib.csproj.CoreCompileInputs.cache
 C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Debug\ProcessHollowingLib.dll
 C:\Users\ic34xe\Desktop\OSEP_Code\ProcessHollowing\ProcessHollowingExe\ProcessHollowingLib\obj\x64\Debug\ProcessHollowingLib.pdb

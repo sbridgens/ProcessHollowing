@@ -3,4 +3,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
     <StartArguments>"ic34xe1!!!" AGcABgUAdAAGBgB1AAYDAGsABgUAZA==</StartArguments>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <StartArguments>"ic34xe1!!!" AGcABgUAdAAGBgB1AAYDAGsABgUAZA==</StartArguments>
+  </PropertyGroup>
 </Project>
