@@ -7,53 +7,54 @@ namespace ShellCodeEncrypter
 {
     public class Encryptor
     {
-        public byte[] AesEncrypt(byte[] input, string password, byte[] iv)
+        private byte[] DeriveAesKeyAndIv(string password, byte[] iv, int keySize)
         {
-            PasswordDeriveBytes pdb =
-              new PasswordDeriveBytes(password, iv);
-            MemoryStream ms = new MemoryStream();
+            var pdb = new PasswordDeriveBytes(password, iv);
             Aes aes = new AesManaged();
-            aes.KeySize = 256;
+            aes.KeySize = keySize;
             aes.Key = pdb.GetBytes(aes.KeySize / 8);
             aes.IV = pdb.GetBytes(aes.BlockSize / 8);
-            CryptoStream cs = new CryptoStream(ms,
-              aes.CreateEncryptor(), CryptoStreamMode.Write);
+            return aes;
+        }
+
+        public byte[] AesEncrypt(byte[] input, string password, byte[] iv, int keySize)
+        {
+            var aes = DeriveAesKeyAndIv(password, iv, keySize);
+            MemoryStream ms = new MemoryStream();
+            CryptoStream cs = new CryptoStream(ms, aes.CreateEncryptor(), CryptoStreamMode.Write);
             cs.Write(input, 0, input.Length);
             cs.Close();
             return ms.ToArray();
         }
 
-        public byte[] AesDecrypt(byte[] input, string password, byte[] iv)
+        public byte[] AesDecrypt(byte[] input, string password, byte[] iv, int keySize)
         {
-            PasswordDeriveBytes pdb =
-              new PasswordDeriveBytes(password, iv);
+            var aes = DeriveAesKeyAndIv(password, iv, keySize);
             MemoryStream ms = new MemoryStream();
-            Aes aes = new AesManaged();
-            aes.KeySize = 256;
-            aes.Key = pdb.GetBytes(aes.KeySize / 8);
-            aes.IV = pdb.GetBytes(aes.BlockSize / 8);
-            CryptoStream cs = new CryptoStream(ms,
-              aes.CreateDecryptor(), CryptoStreamMode.Write);
+            CryptoStream cs = new CryptoStream(ms, aes.CreateDecryptor(), CryptoStreamMode.Write);
             cs.Write(input, 0, input.Length);
             cs.Close();
             return ms.ToArray();
         }
+        
+        public byte[] CaesarEncrypt(byte[] input, int iterations)
+        {
+            byte[] encoded = new byte[input.Length];
+            for (int i = 0; i < input.Length; i++)
+            {
+                encoded[i] = (byte)(((uint)input[i] + iterations) & 0xFF);
+            }
+            return encoded;
+        }
 
-        public void CaesarEncryptShell(byte[] shellcode, string password, byte[] iv)
+        public void CaesarEncryptShell(byte[] shellcode, string password, byte[] iv, int keySize)
         {
             Console.WriteLine($"[+] Caesar Encoding Payload");
-            byte[] encoded = new byte[shellcode.Length];
-            //caesar
-            for (int i = 0; i < shellcode.Length; i++)
-            {
-                //5 iterations
-                encoded[i] = (byte)(((uint)shellcode[i] + 5) & 0xFF);//5 iterations so ammend as needed
-            }
-
+            byte[] encoded = CaesarEncrypt(shellcode, 5);
             Console.WriteLine($"[+] Payload Is Caesar Encoded");
 
             Console.WriteLine("[+] Encrypting Payload using AES 256!");
-            encoded = AesEncrypt(encoded, password, iv);
+            encoded = AesEncrypt(encoded, password, iv, keySize);
 
             Console.WriteLine("[+] Hex Encoding AES Payload");
             StringBuilder hex = new StringBuilder(encoded.Length * 2);
